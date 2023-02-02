@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Coffee Survey</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<style>
+    .t{
+	background-color: palegreen;
+	color: magenta;
+	font-family: arial;
+	font-size: 22px;
+}
+
+    .s{
+        background-color: gold;
+        font-size: 24px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+</style>
+</head>
+
+<body>
+<header>
+<h1 class="name">MorningMug</h1>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="roasting.html">Roasting</a></li>
+<li><a href="grinding.html">Grinding</a></li>
+<li><a href="brewing.html">Brewing</a></li>
+<li><a href="drinks.html">Drinks</a></li>
+<li><a href="survey.html">Coffee Survey</a></li>
+</ul>
+</nav>
+</header>
+
+<h1>Coffee Survey</h1>
+<table border='1' align='center' width='70%' cellpadding='7' cellspacing='0'>
+    <tr class="s">
+        <th colspan="2">Give Information</th>
+    </tr>
+    <tr class="t">
+        <td width="32%">Enter Name</td>
+        <td>
+            <input type="text" value="" name="fname" id='fbregFname' placeholder="First Name">
+        </td>
+    </tr>
+    <tr class="t">
+        <td>Enter Email</td>
+        <td>
+            <input type="text" value="" id='regEmail' name="email" placeholder="Valid Name">
+        </td>
+    </tr>
+    <tr class="t">
+        <td>Tell us your Coffee Preparation Method</td>
+         <td>
+             <textarea name="text" id="" cols="30" rows="8"></textarea>
+         </td>
+    </tr>
+    <tr class="t">
+        <td>Do you grind your beans?</td>
+        <td>
+            <input type="radio" value="Male" name="gend" id=""> Yes <br>
+            <input type="radio" value="Female" name="gend" id=""> No <br>
+        </td>
+    </tr>
+    <tr class="t">
+        <td>How do you drink your coffee?</td>
+        <td>
+        <input type="checkbox" value="sugar" name="" id=""> With Sugar<br>        
+        <input type="checkbox" value="cream" name="" id=""> With Cream<br>                 
+        </td>
+    </tr>
+    <tr class="t">
+        <td colspan="2">
+            <label for ="dropdown">What is your favorite drink?</label> <br>
+                <select name="dropdown" id="dropdown">
+                <option value="01">Please Select A Drink</option>
+                <option value="02">Latte</option>
+                <option value="03">Cappuccino</option>
+                <option value="04">Espresso</option>
+                <option value="05">Doppio</option>
+                </select>
+        </td>
+    </tr>
+    <tr class="t">
+        <td colspan="2" class="submit">
+            <button>Submit</button>
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>
